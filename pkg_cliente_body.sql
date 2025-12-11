@@ -21,7 +21,7 @@ CREATE OR REPLACE PACKAGE BODY PKG_CLIENTE AS
         IF LENGTH(v_cep) = 8 THEN
             RETURN v_cep;
         ELSE
-            RETURN NULL;  -- Ou raise se obrigatório, mas spec diz "somente dígitos; 8 chars"
+            RETURN NULL;  
         END IF;
     END;
 
@@ -147,4 +147,5 @@ CREATE OR REPLACE PACKAGE BODY PKG_CLIENTE AS
     END;
 
 END PKG_CLIENTE;
+
 /
